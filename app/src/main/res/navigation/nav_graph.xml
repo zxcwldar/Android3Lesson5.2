@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/categoryFragment">
+
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.android3lesson2.ui.fragments.category_fragment.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category">
+        <action
+            android:id="@+id/action_categoryFragment_to_wordsFragment"
+            app:destination="@id/wordsFragment">
+
+        </action>
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/wordsFragment"
+        android:name="com.example.android3lesson2.ui.fragments.words_fragment.WordsFragment"
+        android:label="fragment_words"
+        tools:layout="@layout/fragment_words">
+        <argument
+            android:name="fromCategoryToWords"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainBoardFragment"
+        android:name="com.example.android3lesson2.ui.fragments.boarding.MainBoardFragment"
+        android:label="fragment_main_board"
+        tools:layout="@layout/fragment_main_board" />
+
+
+</navigation>
