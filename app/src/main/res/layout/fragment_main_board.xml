@@ -35,8 +35,7 @@
         android:layout_marginTop="42dp"
         android:background="@drawable/button_rectangle_background"
         android:fontFamily="@font/proxima_nova_bold"
-        android:text="let_s_do_it"
-        android:textAllCaps="true"
+        android:text="@string/let_s_do_it"
         android:textColor="@color/white"
         android:textSize="18dp"
         android:visibility="gone" />

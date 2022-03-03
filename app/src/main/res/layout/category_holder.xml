@@ -15,6 +15,6 @@
         android:fontFamily="@font/proxima_nova_regular"
         android:gravity="center"
         android:textSize="20sp"
-        tools:text="Words" />
+        tools:text="@tools:sample/lorem" />
 
 </androidx.cardview.widget.CardView>

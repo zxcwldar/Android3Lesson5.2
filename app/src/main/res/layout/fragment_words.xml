@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/ic_toolbar_gradient_background"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="@string/category_name" />
+        tools:title="@tools:sample/lorem" />
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -34,7 +34,7 @@
         android:layout_height="50dp"
         android:layout_marginBottom="79dp"
         android:backgroundTint="@color/white"
-        android:contentDescription="button_to_add_words"
+        android:contentDescription="@string/button_to_add_words"
         android:src="@drawable/ic_plus"
         app:fabCustomSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"

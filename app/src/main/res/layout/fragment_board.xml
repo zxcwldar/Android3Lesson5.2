@@ -19,7 +19,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="46dp"
         android:fontFamily="@font/proxima_nova_bold"
-        android:text="GOGO"
+        android:text="ddd"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="24dp" />
@@ -31,7 +31,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/proxima_nova_regular"
-        android:text="Go"
+        android:text="ddd"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="16dp" />

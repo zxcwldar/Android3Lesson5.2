@@ -16,7 +16,7 @@
             android:layout_width="114dp"
             android:layout_height="19dp"
             android:background="@color/white"
-            android:text="sheet"
+            android:text="бабочка"
             android:textAlignment="center"
             android:textColor="#0FA4ED"
             android:textSize="16sp" />
