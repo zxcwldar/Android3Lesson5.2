@@ -9,6 +9,7 @@ import com.example.android3lesson2.data.local.RoomHelper;
 import com.example.android3lesson2.data.local.room.models.CategoryModel;
 import com.example.android3lesson2.data.local.room.models.WordModel;
 import com.example.android3lesson2.models.network_model.Hits;
+import com.example.android3lesson2.models.network_model.RapidHits;
 import com.example.android3lesson2.repository.PixabayRepository;
 
 import java.util.List;
@@ -20,6 +21,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel;
 @HiltViewModel
 public class PixabayViewModel extends ViewModel {
     public MutableLiveData<List<Hits>> imageList = new MutableLiveData<>();
+    public MutableLiveData<List<RapidHits>> translationList = new MutableLiveData<>();
     public LiveData<List<CategoryModel>> categoryList = new MutableLiveData<>();
     public LiveData<List<WordModel>> wordsList = new MutableLiveData<>();
     PixabayRepository repository;
@@ -37,6 +39,12 @@ public class PixabayViewModel extends ViewModel {
     public MutableLiveData<List<Hits>> getImages(String word) {
         imageList = repository.getImages(word);
         return imageList;
+    }
+
+    public MutableLiveData<List<RapidHits>> getTranslation(String word) {
+        translationList = repository.getTranslation(word);
+        return translationList;
+
     }
 
     public boolean getBoolean() {

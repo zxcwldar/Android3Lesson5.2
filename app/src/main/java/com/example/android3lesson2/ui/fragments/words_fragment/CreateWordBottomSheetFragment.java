@@ -100,6 +100,9 @@ public class CreateWordBottomSheetFragment extends BottomSheetDialogFragment imp
 
 
                                 });
+                                viewModel.getTranslation(word).observe(getViewLifecycleOwner(), translation -> {
+
+                                });
 
                             }
                         }, 2000);
